@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | The Training Room Costa Rica Retreat</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Outfit',sans-serif;background:#1A2235;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px 20px}
+.card{background:#FFF8F0;border-radius:20px;padding:60px 48px;max-width:520px;width:100%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.eyebrow{font-size:.75rem;font-weight:600;color:#1B6B6E;letter-spacing:.18em;text-transform:uppercase;margin-bottom:12px}
+h1{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:#1A2235;line-height:1;margin-bottom:8px}
+h1 span{font-family:'Instrument Serif',serif;font-style:italic}
+.sub{font-size:1rem;color:#777;margin-bottom:40px}
+.person{margin-bottom:32px}
+.person:last-of-type{margin-bottom:0}
+.name{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:#1A2235;margin-bottom:2px}
+.role{font-size:.75rem;color:#1B6B6E;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+.email-row{display:flex;align-items:center;gap:8px;justify-content:center;flex-wrap:wrap}
+.email-box{background:#F5EDE3;border:1px solid rgba(154,107,80,.15);border-radius:8px;padding:12px 20px;font-size:1rem;color:#1A2235;font-weight:500;font-family:'Outfit',sans-serif;letter-spacing:.01em;user-select:all;cursor:text}
+.copy-btn{background:#E85D3A;color:#fff;border:none;border-radius:8px;padding:12px 18px;font-size:.85rem;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;transition:transform .2s,box-shadow .2s}
+.copy-btn:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(232,93,58,.35)}
+.copy-btn.copied{background:#1B6B6E}
+.or-email{margin-top:12px}
+.or-email a{color:#E85D3A;font-weight:600;text-decoration:none;font-size:.95rem;transition:color .2s}
+.or-email a:hover{color:#E07030}
+.divider{height:1px;background:rgba(154,107,80,.15);margin:32px 0}
+.back{display:inline-block;margin-top:36px;color:#9A6B50;font-size:.85rem;text-decoration:none;font-weight:500;transition:color .2s}
+.back:hover{color:#E85D3A}
+.stripes{display:flex;height:5px;width:100%;border-radius:0 0 20px 20px;overflow:hidden;margin-top:40px;margin-left:-48px;width:calc(100% + 96px);margin-bottom:-60px}
+.stripes span{flex:1}
+.stripes span:nth-child(1){background:#9A6B50}
+.stripes span:nth-child(2){background:#E85D3A}
+.stripes span:nth-child(3){background:#E07030}
+.stripes span:nth-child(4){background:#E8A838}
+.stripes span:nth-child(5){background:#1B6B6E}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="eyebrow">Costa Rica Retreat 2027</div>
+  <h1>Get in <span>touch.</span></h1>
+  <p class="sub">Email Mike or Jim to reserve your spot or ask any questions.</p>
+
+  <div class="person">
+    <div class="name">Mike Stehle</div>
+    <div class="role">Co-Founder / Owner</div>
+    <div class="email-row">
+      <div class="email-box" id="email1">Mike@trainingroom.com</div>
+      <button class="copy-btn" onclick="copyEmail('email1',this)">Copy</button>
+    </div>
+    <div class="or-email">or <a href="mailto:Mike@trainingroom.com?subject=2027%20Costa%20Rica%20Retreat%20Inquiry">open in email app</a></div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="person">
+    <div class="name">Jim Milkowski</div>
+    <div class="role">Co-Founder / Owner</div>
+    <div class="email-row">
+      <div class="email-box" id="email2">Jmilk722@gmail.com</div>
+      <button class="copy-btn" onclick="copyEmail('email2',this)">Copy</button>
+    </div>
+    <div class="or-email">or <a href="mailto:Jmilk722@gmail.com?subject=2027%20Costa%20Rica%20Retreat%20Inquiry">open in email app</a></div>
+  </div>
+
+  <a href="index.html" class="back">&larr; Back to retreat info</a>
+
+  <div class="stripes"><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+
+<script>
+function copyEmail(id, btn) {
+  const text = document.getElementById(id).textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+  });
+}
+</script>
+</body>
+</html>
