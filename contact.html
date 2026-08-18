@@ -4,81 +4,90 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact | The Training Room Costa Rica Retreat</title>
+<meta name="description" content="Email Mike Stehle or Jim Milkowski about The Training Room's 2027 Costa Rica Fitness Retreat in Nosara.">
+<meta name="theme-color" content="#1A2235">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
+:root{--brown:#9A6B50;--coral:#E85D3A;--coral-dk:#C44A2E;--orange:#E07030;--gold:#E8A838;
+--teal:#1B6B6E;--navy:#1A2235;--sand:#F4EBE0;--cream:#FFF9F3;--ink:#1B1B1B;--ink-soft:#4E4E4E;--ink-mute:#7A7472;
+--stripe:linear-gradient(90deg,var(--brown) 0 20%,var(--coral) 20% 40%,var(--orange) 40% 60%,var(--gold) 60% 80%,var(--teal) 80% 100%)}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Outfit',sans-serif;background:#1A2235;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px 20px}
-.card{background:#FFF8F0;border-radius:20px;padding:60px 48px;max-width:520px;width:100%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.3)}
-.eyebrow{font-size:.75rem;font-weight:600;color:#1B6B6E;letter-spacing:.18em;text-transform:uppercase;margin-bottom:12px}
-h1{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:#1A2235;line-height:1;margin-bottom:8px}
+body{font-family:'Outfit',sans-serif;background:var(--navy);min-height:100svh;display:flex;align-items:center;justify-content:center;padding:40px 20px;-webkit-font-smoothing:antialiased}
+::selection{background:var(--coral);color:#fff}
+:focus-visible{outline:2.5px solid var(--coral);outline-offset:3px;border-radius:4px}
+.card{position:relative;background:var(--cream);border-radius:22px;padding:clamp(42px,6vw,64px) clamp(26px,5vw,52px) clamp(38px,5vw,52px);max-width:560px;width:100%;text-align:center;box-shadow:0 34px 90px -26px rgba(0,0,0,.55);overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:6px;background:var(--stripe)}
+.ey{font-size:.7rem;font-weight:600;color:var(--teal);letter-spacing:.2em;text-transform:uppercase;margin-bottom:14px}
+h1{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(2.6rem,8vw,3.4rem);color:var(--navy);line-height:.95;letter-spacing:.015em;margin-bottom:12px}
 h1 span{font-family:'Instrument Serif',serif;font-style:italic}
-.sub{font-size:1rem;color:#777;margin-bottom:40px}
-.person{margin-bottom:32px}
-.person:last-of-type{margin-bottom:0}
-.name{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:#1A2235;margin-bottom:2px}
-.role{font-size:.75rem;color:#1B6B6E;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
-.email-row{display:flex;align-items:center;gap:8px;justify-content:center;flex-wrap:wrap}
-.email-box{background:#F5EDE3;border:1px solid rgba(154,107,80,.15);border-radius:8px;padding:12px 20px;font-size:1rem;color:#1A2235;font-weight:500;font-family:'Outfit',sans-serif;letter-spacing:.01em;user-select:all;cursor:text}
-.copy-btn{background:#E85D3A;color:#fff;border:none;border-radius:8px;padding:12px 18px;font-size:.85rem;font-weight:600;cursor:pointer;font-family:'Outfit',sans-serif;transition:transform .2s,box-shadow .2s}
-.copy-btn:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(232,93,58,.35)}
-.copy-btn.copied{background:#1B6B6E}
-.or-email{margin-top:12px}
-.or-email a{color:#E85D3A;font-weight:600;text-decoration:none;font-size:.95rem;transition:color .2s}
-.or-email a:hover{color:#E07030}
-.divider{height:1px;background:rgba(154,107,80,.15);margin:32px 0}
-.back{display:inline-block;margin-top:36px;color:#9A6B50;font-size:.85rem;text-decoration:none;font-weight:500;transition:color .2s}
-.back:hover{color:#E85D3A}
-.stripes{display:flex;height:5px;width:100%;border-radius:0 0 20px 20px;overflow:hidden;margin-top:40px;margin-left:-48px;width:calc(100% + 96px);margin-bottom:-60px}
-.stripes span{flex:1}
-.stripes span:nth-child(1){background:#9A6B50}
-.stripes span:nth-child(2){background:#E85D3A}
-.stripes span:nth-child(3){background:#E07030}
-.stripes span:nth-child(4){background:#E8A838}
-.stripes span:nth-child(5){background:#1B6B6E}
+.sub{font-size:1rem;color:var(--ink-mute);margin-bottom:clamp(34px,5vw,46px);line-height:1.6}
+.person{text-align:left;padding:24px 0}
+.person+.person{border-top:1px solid rgba(154,107,80,.16)}
+.name{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:1.42rem;color:var(--navy);letter-spacing:.03em}
+.role{font-size:.66rem;color:var(--coral);font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin:3px 0 14px}
+.row{display:flex;align-items:stretch;gap:9px;flex-wrap:wrap}
+.eb{flex:1 1 240px;background:#fff;border:1px solid rgba(154,107,80,.2);border-radius:9px;padding:13px 17px;font-size:.97rem;color:var(--ink);font-weight:500;user-select:all;display:flex;align-items:center;overflow-wrap:anywhere}
+.cp{flex:none;background:var(--coral);color:#fff;border:none;border-radius:9px;padding:0 22px;font:600 .86rem/1 'Outfit',sans-serif;cursor:pointer;transition:background .2s,transform .2s;box-shadow:0 5px 16px -6px rgba(232,93,58,.6)}
+.cp:hover{background:var(--coral-dk);transform:translateY(-1px)}
+.cp.ok{background:var(--teal);box-shadow:none}
+.alt{margin-top:11px;font-size:.87rem;color:var(--ink-mute)}
+.alt a{color:var(--coral);font-weight:600;text-decoration:none}
+.alt a:hover{color:var(--coral-dk);text-decoration:underline}
+.back{display:inline-block;margin-top:clamp(30px,4vw,40px);color:var(--brown);font-size:.86rem;text-decoration:none;font-weight:500;transition:color .2s}
+.back:hover{color:var(--coral)}
+.meta{margin-top:22px;font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-mute);font-weight:600}
+@media(max-width:460px){.cp{flex:1 1 100%;padding:13px 22px}}
 </style>
 </head>
 <body>
-<div class="card">
-  <div class="eyebrow">Costa Rica Retreat 2027</div>
+<main class="card">
+  <div class="ey">Costa Rica Retreat 2027</div>
   <h1>Get in <span>touch.</span></h1>
   <p class="sub">Email Mike or Jim to reserve your spot or ask any questions.</p>
 
   <div class="person">
     <div class="name">Mike Stehle</div>
     <div class="role">Co-Founder / Owner</div>
-    <div class="email-row">
-      <div class="email-box" id="email1">Mike@trainingroomonline.com</div>
-      <button class="copy-btn" onclick="copyEmail('email1',this)">Copy</button>
+    <div class="row">
+      <span class="eb" id="e1">Mike@trainingroom.com</span>
+      <button class="cp" type="button" data-for="e1">Copy</button>
     </div>
-    <div class="or-email">or <a href="mailto:Mike@trainingroomonline.com?subject=2027%20Costa%20Rica%20Retreat%20Inquiry">open in email app</a></div>
+    <div class="alt">or <a href="mailto:Mike@trainingroom.com?subject=2027%20Costa%20Rica%20Retreat%20Inquiry">open in your email app</a></div>
   </div>
-
-  <div class="divider"></div>
 
   <div class="person">
     <div class="name">Jim Milkowski</div>
     <div class="role">Co-Founder / Owner</div>
-    <div class="email-row">
-      <div class="email-box" id="email2">Jmilk722@gmail.com</div>
-      <button class="copy-btn" onclick="copyEmail('email2',this)">Copy</button>
+    <div class="row">
+      <span class="eb" id="e2">Jmilk722@gmail.com</span>
+      <button class="cp" type="button" data-for="e2">Copy</button>
     </div>
-    <div class="or-email">or <a href="mailto:Jmilk722@gmail.com?subject=2027%20Costa%20Rica%20Retreat%20Inquiry">open in email app</a></div>
+    <div class="alt">or <a href="mailto:Jmilk722@gmail.com?subject=2027%20Costa%20Rica%20Retreat%20Inquiry">open in your email app</a></div>
   </div>
 
+  <div class="meta">Nosara, Costa Rica &middot; Jan 17&ndash;23, 2027</div>
   <a href="index.html" class="back">&larr; Back to retreat info</a>
-
-  <div class="stripes"><span></span><span></span><span></span><span></span><span></span></div>
-</div>
+</main>
 
 <script>
-function copyEmail(id, btn) {
-  const text = document.getElementById(id).textContent;
-  navigator.clipboard.writeText(text).then(() => {
-    btn.textContent = 'Copied!';
-    btn.classList.add('copied');
-    setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+document.querySelectorAll('.cp').forEach(function(b){
+  b.addEventListener('click',function(){
+    var t=document.getElementById(b.dataset.for).textContent.trim();
+    function done(){b.textContent='Copied';b.classList.add('ok');
+      setTimeout(function(){b.textContent='Copy';b.classList.remove('ok')},2000)}
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(t).then(done).catch(fallback)
+    }else{fallback()}
+    function fallback(){
+      var a=document.createElement('textarea');a.value=t;a.setAttribute('readonly','');
+      a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);
+      a.select();try{document.execCommand('copy');done()}catch(e){}
+      document.body.removeChild(a);
+    }
   });
-}
+});
 </script>
 </body>
 </html>
